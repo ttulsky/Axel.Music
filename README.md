@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # axel-u-site
 
 ## Project setup
@@ -22,3 +23,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# axel
+Axel's Personal Site
+>>>>>>> origin/main
