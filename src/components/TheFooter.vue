@@ -39,7 +39,7 @@ export default {};
   text-decoration: none;
 }
 .custom-footer-color {
-  background-color: #445d78; /* Replace with your desired hex color */
+  background-color: #0a2f78f3; /* Replace with your desired hex color */
 }
 .v-col {
   flex-grow: 0;
