@@ -39,21 +39,26 @@ export default {
 </script>
 
 <style scoped>
+::v-deep .v-app-bar .v-app-bar-nav-icon .v-icon {
+  color: #ff0000; /* replace with your desired color */
+}
 ::v-deep .app-bar {
-  background-color: #3a1579f7;
+  background-color: #0c0120f7;
 }
 ::v-deep .drawer {
-  background-color: #673ccbfc;
+  background-color: #250266f7;
+  color: white;
+  max-width: 210px;
 }
 .links {
   text-decoration: none;
-  color: rgb(2, 2, 2);
+  color: rgb(252, 251, 251);
 }
 .hover :hover {
   background-color: #144bb8;
 }
 .v-toolbar-title {
-  color: rgb(2, 2, 2);
+  color: rgb(247, 245, 245);
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
