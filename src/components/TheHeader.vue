@@ -69,4 +69,10 @@ export default {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 600px) {
+  .drawer {
+    max-width: 205px;
+    font-size: 12px;
+  }
+}
 </style>
