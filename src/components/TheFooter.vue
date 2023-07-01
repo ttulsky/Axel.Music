@@ -6,13 +6,13 @@
       align="center"
     >
       <v-col class="pa-0" cols="auto">
-        <h6>DJ</h6>
+        <h6>Axelkimsathia@gmail.com</h6>
       </v-col>
       <v-col class="pa-0" cols="auto">
-        <h6>Producer</h6>
+        <h6>IG | Axel Kim Sathia</h6>
       </v-col>
       <v-col class="pa-0" cols="auto">
-        <h6>Musician</h6>
+        <h6>FB | Axel Kim Sathia</h6>
       </v-col>
     </v-row>
   </v-footer>
@@ -24,7 +24,7 @@ export default {};
 
 <style scoped>
 .footer {
-  color: whitesmoke;
+  color: #ff0000;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -39,7 +39,7 @@ export default {};
   text-decoration: none;
 }
 .custom-footer-color {
-  background-color: #0a2f78f3; /* Replace with your desired hex color */
+  background-color: #0c0120f7; /* Replace with your desired hex color */
 }
 .v-col {
   flex-grow: 0;

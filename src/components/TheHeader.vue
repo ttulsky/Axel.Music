@@ -5,7 +5,7 @@
         <v-list-item>
           <v-list-item-content>
             <v-list-item-title>Axel Kim Sathia </v-list-item-title>
-            <v-list-item-subtitle>Axelkimsathia@gmailcom</v-list-item-subtitle>
+            <v-list-item-subtitle>Axelkimsathia@gmail.com</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -46,7 +46,7 @@ export default {
   background-color: #0c0120f7;
 }
 ::v-deep .drawer {
-  background-color: #250266f7;
+  background-color: #251347f7;
   color: white;
   max-width: 210px;
 }
