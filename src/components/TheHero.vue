@@ -53,6 +53,6 @@ html {
   }
 }
 .my-btn:hover {
-  background-color: #3a1579f7 !important;
+  background-color: #fc03d254 !important;
 }
 </style>

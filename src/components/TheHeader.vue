@@ -40,7 +40,7 @@ export default {
 
 <style scoped>
 ::v-deep .v-app-bar .v-app-bar-nav-icon .v-icon {
-  color: #ff0000; /* replace with your desired color */
+  color: #fc03d2d2; /* replace with your desired color */
 }
 ::v-deep .app-bar {
   background-color: #0c0120f7;
@@ -55,7 +55,10 @@ export default {
   color: rgb(252, 251, 251);
 }
 .hover :hover {
-  background-color: #144bb8;
+  background-color: #fc03d246;
+}
+.v-app-bar-nav-icon :hover {
+  background-color: #fc03d23d;
 }
 .v-toolbar-title {
   color: rgb(247, 245, 245);
