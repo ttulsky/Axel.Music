@@ -47,7 +47,7 @@ html {
   transform: translate(-50%, -50%);
   color: white;
 }
-@media screen and (max-width: 701px) {
+@media screen and (max-width: 700px) {
   .hero-image {
     height: 45%; /* Adjust this value as needed */
   }
