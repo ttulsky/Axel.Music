@@ -49,7 +49,7 @@ html {
 }
 @media screen and (max-width: 700px) {
   .hero-image {
-    height: 40%; /* Adjust this value as needed */
+    height: 45%; /* Adjust this value as needed */
   }
 }
 .my-btn:hover {
