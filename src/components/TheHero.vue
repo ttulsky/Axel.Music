@@ -5,7 +5,7 @@
       <h3></h3>
 
       <router-link to="/contact"
-        ><v-btn class="my-btn" rounded="xl" color="black"
+        ><v-btn class="my-btn" rounded="xl" color="white"
           >Hire Me Today!</v-btn
         ></router-link
       >
