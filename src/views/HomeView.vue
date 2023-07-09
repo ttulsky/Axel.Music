@@ -177,65 +177,6 @@ ul.d-flex {
         </div>
       </v-col>
     </v-row>
-
-    <!-- <v-row class="icon-row justify-space-between">
-      <v-col cols="1" class="icon-col">
-        <img
-          height="50"
-          width="50"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-        />
-      </v-col>
-      <v-col cols="1" class="icon-col">
-        <img
-          height="50"
-          width="50"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-        />
-      </v-col>
-      <v-col cols="1" class="icon-col">
-        <img
-          height="50"
-          width="50"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
-        />
-      </v-col>
-      <v-col cols="1" class="icon-col">
-        <img
-          height="50"
-          width="50"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-plain-wordmark.svg"
-        />
-      </v-col>
-      <v-col cols="1" class="icon-col">
-        <img
-          height="50"
-          width="50"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-        />
-      </v-col>
-      <v-col cols="1" class="icon-col">
-        <img
-          height="50"
-          width="50"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
-        />
-      </v-col>
-      <v-col cols="1" class="icon-col">
-        <img
-          height="50"
-          width="50"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
-        />
-      </v-col>
-      <v-col cols="1" class="icon-col">
-        <img
-          height="50"
-          width="50"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
-        />
-      </v-col>
-    </v-row> -->
   </v-container>
 
   <br />
@@ -252,6 +193,9 @@ export default {
 </script>
 
 <style scoped>
+.font-example {
+  font-family: "Caprasimo", cursive;
+}
 .container {
   padding-bottom: 50px;
 }
@@ -265,6 +209,7 @@ export default {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  font-family: "Caprasimo", cursive;
 }
 
 .front h2,
