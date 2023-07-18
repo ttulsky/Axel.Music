@@ -1,5 +1,6 @@
 <template>
   <ContactHero />
+  <h1 Style="text-align: center ">Connect</h1>
   <v-card class="top">
     <div class="container">
       <form @submit.prevent="sendEmail">
@@ -101,11 +102,11 @@ export default {
 .contacts .v-btn {
   margin: 0 10px;
   color: white;
-  background-color: #fc03d2d2; /* Or any color you like */
+  background-color: #fc03d2af; /* Or any color you like */
 }
 
 .contacts .v-btn:hover {
-  background-color: #a8cff5; /* Or any color you like */
+  background-color: #d4adfc; /* Or any color you like */
 }
 
 .top {
@@ -132,7 +133,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #fc03d2d2;
+  background-color: #fc03d2af;
   color: rgb(252, 250, 250);
   padding: 12px 20px;
   border: none;
@@ -141,7 +142,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #a8cff5;
+  background-color: #d4adfc;
 }
 
 .container {
@@ -149,7 +150,7 @@ input[type="submit"]:hover {
   margin: auto;
   text-align: center;
   border-radius: 5px;
-  background-color: #0c0120f7;
+  background-color: #0c0120df;
   padding: 20px;
   width: 50%;
 }
