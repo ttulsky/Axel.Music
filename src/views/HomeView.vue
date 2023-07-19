@@ -161,6 +161,14 @@ ul.d-flex {
             <li>Kinife Party remix</li>
             <li>Ultra Headline</li>
             <li>Daft Punk Tribute</li>
+            <div class="video-wrapper">
+              <vue-plyr class="video">
+                <div
+                  data-plyr-provider="youtube"
+                  data-plyr-embed-id="x0lwodEMNXY"
+                ></div>
+              </vue-plyr>
+            </div>
           </ul>
         </div>
       </v-col>
@@ -173,6 +181,14 @@ ul.d-flex {
             <li>Ibiza Residancy</li>
             <li>Europe Tour 2024</li>
             <li>Japan Tour 2025</li>
+            <div class="video-wrapper">
+              <vue-plyr class="video">
+                <div
+                  data-plyr-provider="youtube"
+                  data-plyr-embed-id="Nju6zB11eEI"
+                ></div>
+              </vue-plyr>
+            </div>
           </ul>
         </div>
       </v-col>
@@ -193,11 +209,17 @@ export default {
 </script>
 
 <style scoped>
+.video-wrapper {
+  position: relative;
+  height: 200px;
+  width: 350px;
+}
+
 .font-example {
   font-family: "Caprasimo", cursive;
 }
 .container {
-  padding-bottom: 50px;
+  padding-bottom: 200px;
 }
 
 #skills {
