@@ -156,11 +156,8 @@ ul.d-flex {
       <v-col cols="6">
         <div class="front">
           <ul>
-            <h2>2023 Projects</h2>
-            <li>SHM Collab</li>
-            <li>Kinife Party remix</li>
-            <li>Ultra Headline</li>
-            <li>Daft Punk Tribute</li>
+            <h2>Avalon infinty | Sound Engineering | 2023</h2>
+
             <div class="video-wrapper">
               <vue-plyr class="video">
                 <div
@@ -176,11 +173,8 @@ ul.d-flex {
       <v-col cols="6">
         <div class="back">
           <ul>
-            <h2>Upcomming</h2>
-            <li>Clothing Line</li>
-            <li>Ibiza Residancy</li>
-            <li>Europe Tour 2024</li>
-            <li>Japan Tour 2025</li>
+            <h2>Shang Chi | Audio Production | 2023</h2>
+
             <div class="video-wrapper">
               <vue-plyr class="video">
                 <div
