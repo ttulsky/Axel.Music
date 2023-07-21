@@ -1,147 +1,3 @@
-<!-- <template>
-  <TheHero />
-
-  <v-container>
-    <v-row>
-      <v-col cols="12">
-        <h1 class="title">Technologies</h1>
-      </v-col>
-    </v-row>
-
-    <v-row id="skills">
-      <v-col cols="12" sm="6" md="4">
-        <div class="front">
-          <ul>
-            <h2>Frontend</h2>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>TypeScript</li>
-            <li>Vue.js</li>
-          </ul>
-        </div>
-      </v-col>
-
-      <v-col cols="12" sm="6" md="4">
-        <div class="back">
-          <ul>
-            <h2>Backend</h2>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>Python</li>
-            <li>MongoDB</li>
-          </ul>
-        </div>
-      </v-col>
-
-      <v-col cols="12" md="4">
-        <ul class="d-flex flex-wrap icon-list">
-          <li>
-            <img
-              height="50"
-              width="50"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            />
-          </li>
-          <li>
-            <img
-              height="50"
-              width="50"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-            />
-          </li>
-          <li>
-            <img
-              height="50"
-              width="50"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
-            />
-          </li>
-          <li>
-            <img
-              height="50"
-              width="50"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-plain-wordmark.svg"
-            />
-          </li>
-          <li>
-            <img
-              height="50"
-              width="50"
-              class="node"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-            />
-          </li>
-          <li>
-            <img
-              height="50"
-              width="50"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
-            />
-          </li>
-          <li>
-            <img
-              height="50"
-              width="50"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
-            />
-          </li>
-          <li>
-            <img
-              height="55"
-              width="55"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
-            />
-          </li>
-        </ul>
-      </v-col>
-    </v-row>
-  </v-container>
-
-  <br />
-</template>
-
-<script>
-import TheHero from "../components/TheHero.vue";
-
-export default {
-  components: {
-    TheHero: TheHero,
-  },
-};
-</script>
-
-<style scoped>
-#skills {
-  align-items: flex-start;
-}
-
-.front ul,
-.back ul,
-.icon-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.front h2,
-.back h2 {
-  margin-top: 0;
-}
-
-.icon-list li {
-  margin-right: 10px; /* add some margin to the right of each icon */
-}
-
-.title {
-  margin-bottom: 2%;
-}
-
-ul.d-flex {
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-</style> -->
-//////////////////////////////////////////////
 <template>
   <TheHero />
 
@@ -152,11 +8,11 @@ ul.d-flex {
       </v-col>
     </v-row>
 
-    <v-row id="skills" class="d-flex flex-wrap">
-      <v-col cols="6">
+    <v-row class="skills">
+      <v-col cols="12" sm="6" md="4">
         <div class="front">
           <ul>
-            <h2>Avalon infinty | Sound Engineering | 2023</h2>
+            <h2>Avalon infinty | Sound Engineering</h2>
 
             <div class="video-wrapper">
               <vue-plyr class="video">
@@ -170,10 +26,10 @@ ul.d-flex {
         </div>
       </v-col>
 
-      <v-col cols="6">
+      <v-col cols="12" sm="6" md="4">
         <div class="back">
           <ul>
-            <h2>Shang Chi | Audio Production | 2023</h2>
+            <h2>Shang Chi | Audio Production</h2>
 
             <div class="video-wrapper">
               <vue-plyr class="video">
@@ -186,9 +42,42 @@ ul.d-flex {
           </ul>
         </div>
       </v-col>
+
+      <v-col cols="12" sm="6" md="4">
+        <div class="front">
+          <ul>
+            <h2>Sestřih Trailerů 63. | Sound Engineering</h2>
+
+            <div class="video-wrapper">
+              <vue-plyr class="video">
+                <div
+                  data-plyr-provider="youtube"
+                  data-plyr-embed-id="YKOw950iwxk"
+                ></div>
+              </vue-plyr>
+            </div>
+          </ul>
+        </div>
+      </v-col>
+
+      <v-col cols="12" sm="6" md="4">
+        <div class="back">
+          <ul>
+            <h2>Evil Dead Rise | Audio Production</h2>
+
+            <div class="video-wrapper">
+              <vue-plyr class="video">
+                <div
+                  data-plyr-provider="youtube"
+                  data-plyr-embed-id="PelnoDkHrR8"
+                ></div>
+              </vue-plyr>
+            </div>
+          </ul>
+        </div>
+      </v-col>
     </v-row>
   </v-container>
-
   <br />
 </template>
 
@@ -203,21 +92,62 @@ export default {
 </script>
 
 <style scoped>
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .front,
+  .back {
+    padding-left: 3%;
+    flex-basis: calc(50% - 10px); /* Account for grid gap */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .front .video-wrapper,
+  .back .video-wrapper {
+    padding-bottom: 0; /* Remove the padding-bottom value */
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .front,
+  .back {
+    padding-left: 3%;
+    flex-basis: calc(33.33% - 13.33px); /* Account for grid gap */
+  }
+}
+
 .video-wrapper {
   position: relative;
-  height: 200px;
-  width: 350px;
+  padding-bottom: 56.25%; /* Set aspect ratio for responsive videos */
+  width: 100%; /* Set the width to 100% to fill the container */
+  max-width: 800px; /* Adjust the maximum width of the video player */
+  margin: 0 auto; /* Center the video player horizontally */
 }
 
-.font-example {
-  font-family: "Caprasimo", cursive;
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
+
 .container {
-  padding-bottom: 200px;
-}
-
-#skills {
-  align-items: flex-start;
+  padding-bottom: 50px;
 }
 
 .front ul,
@@ -250,26 +180,17 @@ export default {
   align-items: center;
 }
 
-@media screen and (max-width: 700px) {
-  .container {
-    padding-bottom: 35px;
+@media screen and (max-width: 800px) {
+  .skills {
+    grid-template-columns: 1fr;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .front,
-  .back {
-    padding-left: 3%;
-    flex-basis: 20%;
-  }
-
-  .icon-row {
-    justify-content: center;
-  }
-
-  .icon-col {
-    padding-left: 0 !important;
-    padding-bottom: 10%;
+@media screen and (min-width: 1000px) {
+  .front .video-wrapper,
+  .back .video-wrapper {
+    height: 300px;
+    width: 400px;
   }
 }
 </style>

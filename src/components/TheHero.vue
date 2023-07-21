@@ -27,14 +27,13 @@ html {
 
 /* The hero image */
 .hero-image {
+  border: 1px solid red;
+  height: 40vh; /* Adjust this value */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0qXzZGnaBncezIVWGKuA83taYAoiND_cdXA&usqp=CAU");
-
-  height: 100%;
-
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   position: relative;
 }
 

@@ -16,20 +16,18 @@ export default {};
 <style scoped>
 body,
 html {
-  height: 100%;
+  height: 5%;
 }
 
 /* The hero image */
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0qXzZGnaBncezIVWGKuA83taYAoiND_cdXA&usqp=CAU");
-
-  height: 50%;
-
-  background-position: center;
+  height: 70vh; /* Reduce the size of the hero */
+  background-position: center; /* Center the image */
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  position: relative;
+
+  position: absolute;
 }
 
 /* Place text in the middle of the image */
@@ -41,11 +39,13 @@ html {
   transform: translate(-50%, -50%);
   color: white;
 }
+
 @media screen and (max-width: 700px) {
   .hero-image {
-    height: 45%; /* Adjust this value as needed */
+    height: 30vh; /* Adjust this value as needed */
   }
 }
+
 .my-btn:hover {
   background-color: #fc03d254 !important;
 }

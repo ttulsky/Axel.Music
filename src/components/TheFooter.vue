@@ -6,13 +6,19 @@
       align="center"
     >
       <v-col class="pa-0" cols="auto">
-        <h6>Axelkimsathia@gmail.com</h6>
+        <router-link to="/contact"
+          ><h6>Axelkimsathia@gmail.com</h6></router-link
+        >
       </v-col>
       <v-col class="pa-0" cols="auto">
-        <h6>IG | Axel Kim Sathia</h6>
+        <a href="https://www.instagram.com/axelkimsathia/" target="_blank">
+          <h6>IG | Axel Kim Sathia</h6>
+        </a>
       </v-col>
       <v-col class="pa-0" cols="auto">
-        <h6>FB | Axel Kim Sathia</h6>
+        <a href="https://www.facebook.com/axel.ulivi" target="_blank">
+          <h6>FB | Axel Kim Sathia</h6>
+        </a>
       </v-col>
     </v-row>
   </v-footer>
@@ -31,16 +37,16 @@ export default {};
   height: 22px;
   z-index: 9999; /* Ensures the footer is always on top */
 }
-.link-icon {
-  white-space: nowrap;
-}
-.link {
-  color: whitesmoke;
+
+.footer a {
   text-decoration: none;
+  color: inherit; /* Keeps the color from .footer */
 }
+
 .custom-footer-color {
   background-color: #0c0120f7; /* Replace with your desired hex color */
 }
+
 .v-col {
   flex-grow: 0;
 }
