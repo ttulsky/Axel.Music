@@ -92,10 +92,16 @@ export default {
 </script>
 
 <style scoped>
-.skills {
+<style scoped > .skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .skills {
+    grid-gap: 5px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -106,7 +112,7 @@ export default {
   .front,
   .back {
     padding-left: 3%;
-    flex-basis: calc(50% - 10px); /* Account for grid gap */
+    flex-basis: calc(50% - 10px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -114,7 +120,7 @@ export default {
 
   .front .video-wrapper,
   .back .video-wrapper {
-    padding-bottom: 0; /* Remove the padding-bottom value */
+    padding-bottom: 0;
   }
 }
 
@@ -126,16 +132,16 @@ export default {
   .front,
   .back {
     padding-left: 3%;
-    flex-basis: calc(33.33% - 13.33px); /* Account for grid gap */
+    flex-basis: calc(33.33% - 13.33px);
   }
 }
 
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%; /* Set aspect ratio for responsive videos */
-  width: 100%; /* Set the width to 100% to fill the container */
-  max-width: 800px; /* Adjust the maximum width of the video player */
-  margin: 0 auto; /* Center the video player horizontally */
+  padding-bottom: 56.25%;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .video {

@@ -77,5 +77,31 @@ export default {
     max-width: 205px;
     font-size: 12px;
   }
+
+  /* Revised media queries */
+  @media screen and (max-width: 800px) {
+    .v-toolbar-title {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .v-toolbar-title {
+      font-size: 12px;
+    }
+    .drawer {
+      max-width: 205px;
+      font-size: 4;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .v-toolbar-title {
+      font-size: 10px;
+    }
+    .drawer {
+      font-size: 4px;
+    }
+  }
 }
 </style>
