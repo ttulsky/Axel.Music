@@ -6,18 +6,16 @@
       align="center"
     >
       <v-col class="pa-0" cols="auto">
-        <router-link to="/contact"
-          ><h6>Axelkimsathia@gmail.com</h6></router-link
-        >
-      </v-col>
-      <v-col class="pa-0" cols="auto">
         <a href="https://www.instagram.com/axelkimsathia/" target="_blank">
-          <h6>IG | Axel Kim Sathia</h6>
+          <h6>|IG|</h6>
         </a>
       </v-col>
       <v-col class="pa-0" cols="auto">
+        <router-link to="/contact"><h6>|Contact|</h6></router-link>
+      </v-col>
+      <v-col class="pa-0" cols="auto">
         <a href="https://www.facebook.com/axel.ulivi" target="_blank">
-          <h6>FB | Axel Kim Sathia</h6>
+          <h6>|FB|</h6>
         </a>
       </v-col>
     </v-row>
