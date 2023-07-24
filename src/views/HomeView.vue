@@ -9,10 +9,10 @@
     </v-row>
 
     <v-row class="skills">
-      <v-col cols="12" sm="6" md="4">
+      <v-col class="my-col" cols="12" sm="6" md="6" xl="4">
         <div class="front">
           <ul>
-            <h2>Avalon infinty | Sound Engineering</h2>
+            <h2>|Avalon infinty|</h2>
 
             <div class="video-wrapper">
               <vue-plyr class="video">
@@ -26,16 +26,16 @@
         </div>
       </v-col>
 
-      <v-col cols="12" sm="6" md="4">
+      <v-col class="my-col" cols="12" sm="6" md="6" xl="4">
         <div class="back">
           <ul>
-            <h2>Shang Chi | Audio Production</h2>
+            <h2>|Miami Beats - Flat Disk|</h2>
 
             <div class="video-wrapper">
               <vue-plyr class="video">
                 <div
                   data-plyr-provider="youtube"
-                  data-plyr-embed-id="Nju6zB11eEI"
+                  data-plyr-embed-id="LNM9-sfPVNk"
                 ></div>
               </vue-plyr>
             </div>
@@ -43,10 +43,10 @@
         </div>
       </v-col>
 
-      <v-col cols="12" sm="6" md="4">
+      <v-col class="my-col" cols="12" sm="6" md="6" xl="4">
         <div class="front">
           <ul>
-            <h2>Sestřih Trailerů 63. | Sound Engineering</h2>
+            <h2>|Sestřih Trailerů 63.|</h2>
 
             <div class="video-wrapper">
               <vue-plyr class="video">
@@ -60,10 +60,10 @@
         </div>
       </v-col>
 
-      <v-col cols="12" sm="6" md="4">
+      <v-col class="my-col" cols="12" sm="6" md="6" xl="4">
         <div class="back">
           <ul>
-            <h2>Evil Dead Rise | Audio Production</h2>
+            <h2>|Evil Dead Rise|</h2>
 
             <div class="video-wrapper">
               <vue-plyr class="video">
@@ -92,64 +92,8 @@ export default {
 </script>
 
 <style scoped>
-<style scoped > .skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
-}
-
-@media screen and (max-width: 600px) {
-  .skills {
-    grid-gap: 5px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .skills {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .front,
-  .back {
-    padding-left: 3%;
-    flex-basis: calc(50% - 10px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .front .video-wrapper,
-  .back .video-wrapper {
-    padding-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .skills {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .front,
-  .back {
-    padding-left: 3%;
-    flex-basis: calc(33.33% - 13.33px);
-  }
-}
-
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.my-col {
+  padding: 10px;
 }
 
 .container {
@@ -186,17 +130,20 @@ export default {
   align-items: center;
 }
 
-@media screen and (max-width: 800px) {
-  .skills {
-    grid-template-columns: 1fr;
-  }
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-height: 275px; /* Set height here */
+  max-width: 500px;
+  margin: 0 auto;
+  overflow: hidden; /* Add this line to cut off anything beyond this height */
 }
-
-@media screen and (min-width: 1000px) {
-  .front .video-wrapper,
-  .back .video-wrapper {
-    height: 300px;
-    width: 400px;
-  }
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
+/* Nju6zB11eEI */
