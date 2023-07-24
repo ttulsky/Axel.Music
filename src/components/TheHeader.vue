@@ -48,7 +48,7 @@ export default {
 ::v-deep .drawer {
   background-color: #251347f7;
   color: white;
-  max-width: 210px;
+  max-width: 300px;
 }
 .links {
   text-decoration: none;
@@ -67,41 +67,30 @@ export default {
   white-space: nowrap;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .v-toolbar-title {
     font-size: 14px;
   }
-}
-@media screen and (max-width: 600px) {
-  .drawer {
-    max-width: 205px;
+  ::v-deep .drawer {
     font-size: 12px;
   }
+}
 
-  /* Revised media queries */
-  @media screen and (max-width: 800px) {
-    .v-toolbar-title {
-      font-size: 14px;
-    }
+@media screen and (max-width: 600px) {
+  .v-toolbar-title {
+    font-size: 12px;
   }
-
-  @media screen and (max-width: 600px) {
-    .v-toolbar-title {
-      font-size: 12px;
-    }
-    .drawer {
-      max-width: 205px;
-      font-size: 4;
-    }
+  ::v-deep .drawer {
+    font-size: 4px;
   }
+}
 
-  @media screen and (max-width: 400px) {
-    .v-toolbar-title {
-      font-size: 10px;
-    }
-    .drawer {
-      font-size: 4px;
-    }
+@media screen and (max-width: 400px) {
+  .v-toolbar-title {
+    font-size: 10px;
+  }
+  .drawer {
+    font-size: 4px;
   }
 }
 </style>
