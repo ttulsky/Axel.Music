@@ -4,7 +4,7 @@
   <v-container class="container">
     <v-row>
       <v-col cols="12">
-        <h1 class="title">Recent Projects</h1>
+        <h1 class="title">Recent Productions</h1>
       </v-col>
     </v-row>
 

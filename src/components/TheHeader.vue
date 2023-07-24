@@ -48,7 +48,8 @@ export default {
 ::v-deep .drawer {
   background-color: #251347f7;
   color: white;
-  max-width: 300px;
+  max-width: 225px;
+  border: solid 1px red;
 }
 .links {
   text-decoration: none;

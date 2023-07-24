@@ -33,6 +33,7 @@ export default {};
   position: fixed;
   bottom: 0;
   height: 22px;
+  border-bottom: solid 1px rgb(255, 0, 0);
   z-index: 9999; /* Ensures the footer is always on top */
 }
 

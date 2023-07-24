@@ -46,9 +46,19 @@ html {
   transform: translate(-50%, -50%);
   color: white;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
   .hero-image {
-    height: 15%; /* Adjust this value as needed */
+    height: 20%; /* Adjust this value as needed */
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero-image {
+    height: 20%; /* Adjust this value as needed */
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero-image {
+    height: 10%; /* Adjust this value as needed */
   }
 }
 .my-btn:hover {
