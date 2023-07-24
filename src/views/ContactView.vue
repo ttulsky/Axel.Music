@@ -28,8 +28,18 @@
     </div>
     <h3 class="email">Axelkimsathia@gmail.com</h3>
     <div class="contacts">
-      <v-btn href="" target=""> IG </v-btn>
-      <v-btn href="" target=""> FB </v-btn>
+      <v-btn
+        href="https://www.instagram.com/axelkimsathia/"
+        target="https://www.instagram.com/axelkimsathia/"
+      >
+        IG
+      </v-btn>
+      <v-btn
+        href="https://www.facebook.com/axel.ulivi"
+        target="https://www.facebook.com/axel.ulivi"
+      >
+        FB
+      </v-btn>
     </div>
   </v-card>
 </template>
@@ -52,6 +62,10 @@ export default {
   },
   methods: {
     async sendEmail(e) {
+      if (!this.email) {
+        alert("Please enter your email address");
+        return;
+      }
       try {
         await emailjs.sendForm(
           process.env.VUE_APP_EMAILJS_SERVICE_ID,
@@ -64,10 +78,11 @@ export default {
             message: this.message,
           }
         );
-        // If email sent successfully
-        alert(
-          "Thank you, your message has been received. We'll be in touch soon!"
-        );
+        let firstName = this.name.split(" ")[0];
+        let message = firstName
+          ? `Thanks ${firstName}! Your message has been received. I'll be in touch soon!`
+          : "Thank you! Your message has been received. I'll be in touch soon!";
+        alert(message);
       } catch (err) {
         if (err instanceof ReferenceError) {
           alert("JSON Error: " + err.message);
@@ -75,7 +90,6 @@ export default {
           throw err; // rethrow
         }
       }
-      // Reset form field
       this.name = "";
       this.email = "";
       this.message = "";
@@ -102,11 +116,12 @@ export default {
 .contacts .v-btn {
   margin: 0 10px;
   color: white;
-  background-color: #fc03d2af; /* Or any color you like */
+  border: 1px solid red;
+  background-color: #ed92de; /* Or any color you like */
 }
 
 .contacts .v-btn:hover {
-  background-color: #d4adfc; /* Or any color you like */
+  background-color: #d5adfc; /* Or any color you like */
 }
 
 .top {
@@ -133,15 +148,18 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #fc03d2af;
+  background-color: #ed92de;
   color: rgb(252, 250, 250);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
+  border: 1px solid red;
+
   cursor: pointer;
 }
 
 input[type="submit"]:hover {
+  border: 1px solid red;
   background-color: #d4adfc;
 }
 
@@ -150,9 +168,10 @@ input[type="submit"]:hover {
   margin: auto;
   text-align: center;
   border-radius: 5px;
-  background-color: #0c0120df;
+  background-color: #ddd0f5;
   padding: 20px;
   width: 50%;
+  border: 1px solid red;
 }
 
 /* Add media query for smaller viewports */
