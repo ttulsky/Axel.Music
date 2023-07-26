@@ -20,7 +20,7 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <router-link class="links" to="/">
         <v-toolbar-title class="body-1 hover d-none d-sm-block">
-          Axel Kim Sathia Producer - Composer - Sound Designer
+          Axel Kim Sathia | Producer - Composer - Sound Designer
         </v-toolbar-title>
         <v-toolbar-title class="body-1 hover d-sm-none">
           Axel Kim Sathia
